@@ -1,11 +1,39 @@
-function loadNavbar() {
-  fetch("../components/navbar.html")
-    .then((response) => response.text())
-    .then((data) => {
-      console.log(data);
-      document.getElementById("navbar").innerHTML = data;
+// function loadComponent(id, url) {
+//   fetch(url)
+//     .then(res => res.text())
+//     .then(data => {
+//       document.getElementById(id).innerHTML = data;
+//     })
+//     .catch(err => console.error(`Erro ao carregar ${id}:`, err));
+// }
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   loadComponent("navbar", "../components/navbar.html");
+//   loadComponent("footer", "../components/footer.html");
+// });
+
+function loadComponent(id, url, callback) {
+  fetch(url)
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+      if (callback) callback(); // Executa algo depois de carregar o HTML
     })
-    .catch((error) => console.error("Error loading navbar:", error));
+    .catch(err => console.error(`Erro ao carregar ${id}:`, err));
 }
 
-document.addEventListener("DOMContentLoaded", loadNavbar);
+document.addEventListener("DOMContentLoaded", () => {
+  loadComponent("navbar", "../components/navbar.html", iniciarMenu);
+  loadComponent("footer", "../components/footer.html");
+});
+
+function iniciarMenu() {
+  const toggle = document.getElementById("menuToggle");
+  const navList = document.getElementById("navList");
+
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      navList.classList.toggle("menu-open");
+    });
+  }
+}

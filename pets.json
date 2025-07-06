@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Bolinha",
+    "breed": "Shih Tzu",
+    "age": "8 anos",
+    "gender": "Macho",
+    "location": "São Paulo - SP",
+    "description": "Bolinha é um amor de doguinho, muito brincalhão e carinhoso. Adora passear e receber carinho",
+    "image": "/assets/images/dog03.jpg",
+    "type": "dog"
+  },
+  {
+    "id": 2,
+    "name": "Mingau",
+    "breed": "SRD",
+    "age": "1 ano",
+    "gender": "Fêmea",
+    "location": "Rio de Janeiro - RJ",
+    "description": "Mingau é uma gatinha tranquila e elegante. Adora observar tudo de cima do armário",
+    "image": "/assets/images/cat01.jpg",
+    "type": "cat"
+  },
+  {
+    "id": 3,
+    "name": "Pipoca",
+    "breed": "SRD",
+    "age": "4 meses",
+    "gender": "Fêmea",
+    "location": "Belo Horizonte - MG",
+    "description": "Pipoca é uma filhote cheia de energia! Está sempre pulando e brincando",
+    "image": "/assets/images/dog02.jpg",
+    "type": "dog"
+  },
+  {
+    "id": 4,
+    "name": "Nuvem",
+    "breed": "SRD",
+    "age": "3 anos",
+    "gender": "Macho",
+    "location": "Curitiba - PR",
+    "description": "Nuvem é tão fofinho que parece mesmo uma nuvem! Peludo e tranquilo. Um verdadeiro bebê",
+    "image": "/assets/images/cat02.jpg",
+    "type": "cat"
+  },
+  {
+    "id": 5,
+    "name": "Tico",
+    "breed": "Calopsita",
+    "age": "1 ano",
+    "gender": "Macho",
+    "location": "Porto Alegre - RS",
+    "description": "Tico é uma calopsita muito esperta e carinhosa. Adora cantar pela manhã e comer sementes",
+    "image": "/assets/images/cal01.jpg",
+    "type": "other"
+  },
+  {
+    "id": 6,
+    "name": "Luna",
+    "breed": "Golden Retriever",
+    "age": "5 anos",
+    "gender": "Fêmea",
+    "location": "Salvador - BA",
+    "description": "Luna é uma cachorrona dócil e paciente, perfeita para famílias. Adora crianças e brincar na água",
+    "image": "/assets/images/dog04.jpg",
+    "type": "dog"
+  }
+]
