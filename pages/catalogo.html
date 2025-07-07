@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets para Adoção | Kawaii Pets</title>
+    <link rel="stylesheet" href="../components/petCard/petCard.css">
+    <link rel="stylesheet" href="../styles/catalogo.css" />
+    <link rel="stylesheet" href="../styles/main.css" /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <header id="navbar"></header>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="cat-ears"><i class="fas fa-paw"></i> Pets para Adoção</h1>
+      </div>
+
+      <div class="pet-filters">
+        <button class="active" data-filter="all">Todos</button>
+        <button data-filter="dog"><i class="fas fa-dog"></i> Cachorros</button>
+        <button data-filter="cat"><i class="fas fa-cat"></i> Gatos</button>
+        <button data-filter="other"><i class="fas fa-dove"></i> Outros</button>
+      </div>
+
+      <div class="pets-container"></div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="../components/petCard/petCard.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/catalogo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
